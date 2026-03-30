@@ -1,0 +1,197 @@
+/* ============================
+   CONFIGURAÇÃO GLOBAL
+============================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* ============================
+   CABEÇALHO
+============================ */
+header {
+  background: linear-gradient(90deg, #ff004c, #ff7b00);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* ============================
+   CONTAINER
+============================ */
+.container {
+  width: 95%;
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* ============================
+   TÍTULOS E TEXTOS
+============================ */
+h1 {
+  color: #ff004c;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #ff004c;
+  font-size: 26px;
+  margin-top: 25px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* ============================
+   IMAGENS RESPONSIVAS
+============================ */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* ============================
+   RODAPÉ
+============================ */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: #111;
+  color: white;
+  font-size: 18px;
+}
+
+/* ============================
+   MENU HAMBÚRGUER
+============================ */
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  width: 35px;
+  z-index: 999;
+}
+
+.menu-icon div {
+  height: 5px;
+  background: white;
+  margin: 6px 0;
+  border-radius: 5px;
+}
+
+/* ============================
+   MENU LATERAL
+============================ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #111;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 998;
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar a:hover {
+  background: #ff004c;
+}
+
+.show-menu {
+  left: 0;
+}
+
+/* ============================
+   RESPONSIVIDADE TOTAL
+============================ */
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+  header {
+    font-size: 26px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p, .sidebar a, .container {
+    font-size: 18px;
+  }
+
+  .menu-icon {
+    width: 30px;
+  }
+
+  .menu-icon div {
+    height: 4px;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 481px) and (max-width: 900px) {
+  header {
+    font-size: 30px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
+/* COMPUTADORES GRANDES */
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+
+  header {
+    font-size: 36px;
+  }
+
+  .container {
+    max-width: 1100px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
